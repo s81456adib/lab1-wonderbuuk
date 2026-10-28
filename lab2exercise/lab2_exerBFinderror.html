@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+ <html lang="en">
+<head>
+ <meta charset="utf-8">
+ <title>Course Feedback</title>
+ </head>
+ <body>
+ <header>
+ <h1>CSF3133 Course Feedback</h1>
+ </header>			<!--header instead of head-->
+ <nav>
+ <a href="#results">Results</a> | <a href="#form">Feedback Form</a>
+ | <a href="#comments">Student Comments</a>
+ </nav>
+ <section id="results">
+ <h2>Feedback Summary</h2>
+ <table>
+ <tr>
+		<th>Week</th>
+		<th>Topic</th>
+		<th>Rating</th> <!--th instead of td-->
+</tr>
+<tr>
+		<td>1</td>
+		<td>Introduction to HTML</td>
+		<td>4.5</td>
+ </tr> 	 <!--missingafter </tr>-->
+ <tr>
+		<td>2</td>
+		<td>Tables and Forms</td><!--remove colspan-->
+		<td>4.2</td>
+ </tr>
+ <tr>
+		<td>3</td>
+		<td>Semantic HTML</td><!--remove extra <td>-->
+		<td>4.0</td>
+</tr>
+<tr>
+		<td>4</td>
+		<td rowspan="2">“Mini Project</td>
+		<td>4.5</td>
+</tr>
+<tr>
+		<td>5</td>
+		<td>4.7</td>
+</tr>
+
+<tr>
+        <td colspan="2">Average Rating</td>
+        <td>4.3</td>
+    </tr>
+ </table>
+ </section>
+ <section id="form">
+ <h2>Give Your Feedback</h2>
+ <form action="submit_feedback.php" method="post">
+ <label for="name">Name:</label>
+ <input type="text" id="name" name="name"><br> <!--id=name instead of id=fullname-->
+ <br>
+ 
+ <label for="email">E-mail:</label>
+<input type="email" id="email" name="email">
+ <br>
+ 
+ <p>OVERALL RATING</p>
+ <input type="radio" id="good" name="rating" value="good">
+ <label for="good">Good</label>
+ <br>
+ <input type="submit" value="Submit">
+ </form> <!--form instead of from-->
+ </section>
+ <footer>
+ <p>Copyright &copy; 2026 CSF3133</p><!--add ;after copy-->
+ </footer>
+ </body>
+ </html>
