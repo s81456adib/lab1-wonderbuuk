@@ -1,0 +1,128 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Ticket Booking</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div id="header">
+        <h1>e-Ticket <span>Your Campus Cinema</span></h1>
+    </div>
+
+    <!-- Main Content Section -->
+    <div id="content">
+
+        <h2>Book Your Ticket</h2>
+
+        <p>Promotion: tickets &lt; RM10 for students &amp; staff!</p>
+     
+	 <h2>Now Showing</h2>
+	 <ul>
+	 <li>
+		<strong>Kudrat 1968</strong>
+		<span>Age rating :P18</span>
+		<a href="https://www.youtube.com/watch?v=lo2WH5b3QAY">Watch Kudrat 1968 Trailer</a>
+	</li>
+	
+	<li>
+		<strong>BAGA</strong>
+		<span>age rating:P16</span>
+		<a href="https://www.youtube.com/watch?v=WflARrzz2qA">Watch Baga Trailer</a>
+	</li>
+
+	<li>
+		<strong>Takluk 2:OPS DAULAT</strong>
+		<span>age rating:P16</span>
+		<a href="https://www.youtube.com/watch?v=Yxgv7C0Vth4">Watch Takluk 2 Trailer</a>
+	</li>
+</ul>
+
+        <!-- Ticket Booking Form -->
+        <form action="booking.php"
+              oninput="total.value = Number(adult.value) + Number(child.value);
+			  price.value = (Number(adult.value) * 12) + (Number(child.value) * 8)">
+
+            <!-- Customer Information -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"
+                   placeholder="Enter your name" required autofocus>
+            <br><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+			
+			 <!-- New Section 2: Phone Number Input -->
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone"
+                   placeholder="Enter your phone number" required>
+            <br><br>
+
+
+            <!-- Show Date -->
+            <label for="date">Show date:</label>
+            <input type="date" id="date" name="date">
+            <br><br>
+
+		<!-- New Section 3: Show Time Input -->
+            <label for="time">Show Time:</label>
+            <input type="time" id="time" name="time">
+            <br><br>
+			
+            <!-- Movie Selection -->
+            <label for="movie">Movie:</label>
+            <input type="text" id="movie" name="movie" list="movielist">
+
+            <datalist id="movielist">
+                <option value="Kudrat 1968">
+                <option value="BAGA">
+				<option value="TAKLUK 2">
+
+            </datalist>
+            <br><br>
+
+            <!-- Adult Tickets -->
+            <label for="adult">Adult tickets:</label>
+            <input type="number" id="adult" name="adult" min="0" value="0">
+            <br><br>
+
+            <!-- Child Tickets -->
+            <label for="child">Child tickets:</label>
+            <input type="number" id="child" name="child" min="0" value="0">
+            <br><br>
+
+            <!-- Service Rating -->
+            <label for="rating">Rate our service:</label>
+            <input type="range" id="rating" name="rating" min="1" max="5" step="1">
+            <br><br>
+			
+			<!-- New Section 4: Total Number of Tickets -->
+            <h3>Total Tickets:</h3>
+            <output name="total" for="adult child">0</output>
+            <br><br>
+			
+             <!-- New Section 5: Total Ticket Price Calculator -->
+            <h3>Total Price:</h3>
+            RM <output name="price" for="adult child">0</output>
+            <br><br>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Book Now">
+
+        </form>
+    </div>
+
+    <!-- Footer Section -->
+    <div id="footer">
+	 <!-- New Section 6: Footer with HTML Entities -->
+        <p>
+            e-Ticket&reg; &ndash; Campus Cinema &lt; RM10 every Tuesday
+        </p>
+
+        <p>&copy; 2026 CineKampus. All rights reserved.</p>
+    </div>
+
+</body>
+</html>

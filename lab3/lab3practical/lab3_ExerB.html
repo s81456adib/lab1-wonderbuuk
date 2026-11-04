@@ -1,0 +1,99 @@
+
+<!DOCTYPE html> <!-- Error 1: Original <!DOCTYPE> was incomplete. Correct: <!DOCTYPE html>. -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Ticket Booking</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div id="header">
+        <h1>e-Ticket <span>Your Campus Cinema</span></h1>
+        <!-- Error 2: Original </span> was placed after </h1>. Correct: close </span> before </h1>. -->
+    </div>
+
+    <!-- Main Content Section -->
+    <div id="content">
+        <!-- Error 3: Original <span id="content"> was incorrect. Correct: use <div id="content">. -->
+
+        <h2>Book Your Ticket</h2>
+
+        <p>Promotion: tickets &lt; RM10 for students &amp; staff!</p>
+        <!-- Error 4: Original < symbol was not escaped. Correct: use &lt;. -->
+        <!-- Error 5: Original &staff was incorrect. Correct: use &amp; staff. -->
+
+        <!-- Ticket Booking Form -->
+        <form action="booking.php"
+              oninput="total.value = Number(adult.value) + Number(child.value)">
+            <!-- Error 6: Original number() was incorrect. Correct: use Number() because JavaScript is case-sensitive. -->
+
+            <!-- Customer Information -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"
+                   placeholder="Enter your name" required autofocus>
+            <br><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <!-- Error 7: Original type="emial" was misspelled. Correct: type="email". -->
+            <br><br>
+
+            <!-- Show Date -->
+            <label for="date">Show date:</label>
+            <input type="date" id="date" name="date">
+            <br><br>
+
+            <!-- Movie Selection -->
+            <label for="movie">Movie:</label>
+            <input type="text" id="movie" name="movie" list="movielist">
+            <!-- Error 8: Original list="movies" did not match the datalist ID. Correct: list="movielist". -->
+
+            <datalist id="movielist">
+                <option value="Space Rangers">
+                <option value="Kampung Comedy">
+            </datalist>
+            <!-- Error 9: Original input and datalist IDs did not match. Correct: both use "movielist". -->
+            <br><br>
+
+            <!-- Adult Tickets -->
+            <label for="adult">Adult tickets:</label>
+            <input type="number" id="adult" name="adult" min="0" value="0">
+            <!-- Error 10: Original number input had no min="0". Correct: prevent negative ticket quantities. -->
+            <br><br>
+
+            <!-- Child Tickets -->
+            <label for="child">Child tickets:</label>
+            <input type="number" id="child" name="child" min="0" value="0">
+            <!-- Error 11: Original number input had no min="0". Correct: prevent negative ticket quantities. -->
+            <br><br>
+
+            <!-- Service Rating -->
+            <label for="rating">Rate our service:</label>
+            <input type="range" id="rating" name="rating" min="1" max="5" step="1">
+            <!-- Error 12: Original min="5" and max="1" were reversed. Correct: min="1" max="5". -->
+            <br><br>
+
+            <!-- Total Ticket Calculation -->
+            Total tickets:
+            <output name="total" for="adult child">0</output>
+            <!-- Error 13: Original for="adult kid" used the wrong ID. Correct: for="adult child". -->
+            <!-- Error 14: Original output was empty. Correct: add 0 as the initial value. -->
+            <br><br>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Book Now">
+
+        </form>
+    </div>
+    <!-- Error 15: Original closing </span> was incorrect. Correct: use </div> to close the content section. -->
+
+    <!-- Footer Section -->
+    <div id="footer">
+        <p>&copy; 2026 CineKampus. All rights reserved.</p>
+        <!-- Error 16: Original &Copy; had incorrect capitalization. Correct: use &copy;. -->
+    </div>
+
+</body>
+</html>
+<!-- Error 17: Original code contained extra text "54" and duplicate closing tags after </html>. Remove them. -->
