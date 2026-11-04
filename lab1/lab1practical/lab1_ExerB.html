@@ -1,0 +1,26 @@
+<!DOCTYPE html>    <!--Error 1 (Line 1): Missing <!DOCTYPE html>.-->
+<html lang="en"> <!--Error 2 (Line 2): Missing lang="en" attribute in the html tag.-->
+<head>
+    <title>Campus Coding Club</title><!--Error 3 (Line 4): The title tag is not closed.-->
+    <meta charset="utf-8">    <!--Error 4 (Line 5): The meta charset tag is placed before the title tag is closed.-->
+
+</head>
+<body>
+    <h1>Welcome to Campus Coding Club</h1>    <!--Error 5 (Line 9): The h1 closing tag should be </h1>, not </h2>.-->
+    <p>We meet every <strong><em>Wednesday</em></strong> at Lab 3.</p>    <!--Error 6 (Line 10): The em and strong tags are
+	closed in the wrong order.-->
+	
+    <h2>Our Activities</h2>   <!-- Error 8 (Line 13): The h2 opening tag is not closed correctly;
+	it should be <h2>Our Activities</h2>.-->
+    <ul>
+        <li>Weekly coding sessions</li>    <!--Error 9 (Line 16): The first li tag is not closed.-->
+        <li>Hackathon</li>
+        <li>Web design workshop</li>
+    </ul>   <!-- Error 10 (Line 19): The closing tag </ol> should be </ul>.-->
+    <p>Visit our university:
+        <a href="https://www.umt.edu.my">UMT Website</a>    <!--Error 11 (Line 21): The URL in href is missing https://.-->
+    </p>
+    <img src="club.jpg" alt="Campus Coding Club">    <!--Error 12 (Line 23): The img tag is missing alt text.-->
+    <p>Copyright &copy; 2026 Campus Coding Club &amp; Friends</p>
+</body>
+</html>

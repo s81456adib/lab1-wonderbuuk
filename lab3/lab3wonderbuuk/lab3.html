@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lab 3</title>
+
+</head>
+
+<body>
+
+    <!-- Header Section -->
+
+    <div>
+
+        <h1>Contact Us</h1>
+
+        <span>We are happy to hear from you!</span>
+
+    </div>
+
+    <!-- Content Section -->
+
+    <div>
+
+        <h2>Contact Form</h2>
+
+        <form>
+
+            <label>Email:</label>
+
+            <input type="email" name="email" required>
+
+            <br><br>
+
+            <label>Preferred Contact Date:</label>
+
+            <input type="date" name="date">
+
+            <br><br>
+
+            <label>Satisfaction Level:</label>
+
+            <input type="range" name="satisfaction" min="0" max="10">
+
+            <br><br>
+
+            <input type="submit" value="Submit">
+
+        </form>
+
+        <!-- Calculator -->
+
+        <div>
+
+            <h2>Simple Calculator</h2>
+
+            <input type="number" id="num1" value="0">
+
+            +
+
+            <input type="number" id="num2" value="0">
+
+            =
+
+            <output id="result">0</output>
+
+        </div>
+
+    </div>
+
+    <!-- Footer Section -->
+
+    <div>
+
+        <p>Contact: info@example.com</p>
+
+        <p>&copy; 2026 Contact Us</p>
+
+    </div>
+
+    <!-- JavaScript for Calculator -->
+
+    <script>
+
+        function calculateSum() {
+
+            let a = Number(document.getElementById("num1").value);
+
+            let b = Number(document.getElementById("num2").value);
+
+            document.getElementById("result").value = a + b;
+
+        }
+
+        document.getElementById("num1").addEventListener("input", calculateSum);
+
+        document.getElementById("num2").addEventListener("input", calculateSum);
+
+    </script>
+
+</body>
+
+</html>
