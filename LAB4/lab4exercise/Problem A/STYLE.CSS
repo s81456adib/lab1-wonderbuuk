@@ -1,0 +1,179 @@
+
+/* General Style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffbea;
+    color: #333333;
+    margin: 0;
+}
+
+/* Header */
+header {
+    background-color: #ffd633;
+    color: #4d3900;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    text-decoration: overline;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #e6b800;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    color: #333333;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Navigation Hover */
+nav a:hover {
+    background-color: #fff2a6;
+}
+
+/* Link States */
+a:link {
+    color: #8a6500;
+}
+
+a:visited {
+    color: #795500;
+}
+
+a:hover {
+    color: #cc6600;
+}
+
+a:active {
+    color: red;
+}
+
+/* Main Content */
+main {
+    width: 90%;
+    margin: 20px auto;
+}
+
+/* Section */
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #e6cf70;
+}
+
+h2 {
+    color: #806000;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* Destinations */
+#destinations {
+    background-color: #fffdf2;
+}
+
+.card {
+    background-color: #fff2b3;
+    border: 1px solid #e6c84f;
+    padding: 12px;
+    margin: 10px 0;
+}
+
+.card h3 {
+    color: #806000;
+}
+
+/* Old Price */
+.old-price {
+    text-decoration: line-through;
+    color: grey;
+}
+
+/* Video */
+#video {
+    text-align: center;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    color: #806000;
+    margin-top: 8px;
+}
+
+/* Trip Form */
+#trip {
+    background-color: #fffdf2;
+}
+
+.trip-form {
+    background-color: #fff2b3;
+    padding: 15px;
+    border: 1px solid #d6b52b;
+    width: 90%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.trip-form label {
+    margin-right: 8px;
+}
+
+.trip-form input[type="text"],
+.trip-form input[type="email"] {
+    width: 95%;
+    padding: 8px;
+    margin: 5px 0 12px;
+}
+
+button {
+    background-color: #e6b800;
+    padding: 8px 20px;
+    border: 1px solid #806000;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffd633;
+}
+
+/* Footer */
+footer {
+    background-color: #e6b800;
+    color: #333333;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    nav li {
+        display: block;
+        padding: 8px;
+    }
+
+    main {
+        width: 95%;
+    }
+}

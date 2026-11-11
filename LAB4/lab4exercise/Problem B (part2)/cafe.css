@@ -1,0 +1,147 @@
+
+/* General website design */
+body {
+    background-color: #FFF8DC;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Main heading */
+h1 {
+    text-decoration: overline;
+    text-align: center;
+    color: #9A5B00;
+}
+
+/* Welcome paragraph */
+.welcome {
+    text-align: center;
+}
+
+/* Navigation bar styles */
+nav {
+    background-color: #F9E79F;
+    padding: 10px;
+}
+
+/* Remove bullet points */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Display navigation links */
+nav li {
+    display: inline-block;
+}
+
+/* Navigation link design */
+nav a {
+    display: block;
+    background-color: #D4AC0D;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+/* Change background colour when mouse moves over link */
+nav a:hover {
+    background-color: #E67E22;
+    color: white;
+}
+
+/* Paragraph design */
+p {
+    color: #333333;
+    text-align: justify;
+}
+
+/* Introduction section */
+.intro {
+    font-size: 18px;
+    background-color: #FDEBD0;
+    padding: 10px;
+}
+
+/* Menu item design */
+.item {
+    background-color: #FCF3CF;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Old price design */
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* New price design */
+.highlight {
+    font-weight: bold;
+    color: #C0392B;
+}
+
+/* Responsive video design */
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Video caption */
+figcaption {
+    color: #555555;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Feedback form design */
+.feedback-form {
+    background-color: #FDEBD0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Form labels */
+.feedback-form label {
+    margin-right: 10px;
+}
+
+/* Text and email input */
+.feedback-form input[type="text"],
+.feedback-form input[type="email"] {
+    display: block;
+    width: 95%;
+    padding: 10px;
+    margin: 8px 0 15px;
+}
+
+/* Submit button */
+.feedback-form button {
+    background-color: #D4AC0D;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Submit button hover */
+.feedback-form button:hover {
+    background-color: #E67E22;
+}
+
+/* Footer design */
+footer {
+    background-color: #F9E79F;
+    padding: 15px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Footer email link */
+footer a {
+    color: #1A5276;
+}

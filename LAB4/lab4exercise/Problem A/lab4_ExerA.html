@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Malaysia</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        #welcome {
+            color: #805b00;
+            text-align: center;
+        }
+
+        .note {
+            background-color: #fff2b3;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Explore Malaysia</h1>
+        <p id="welcome">Welcome! Let's explore beautiful places in Malaysia.</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#trip">Plan a Trip</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Destinations Section -->
+        <section id="destinations">
+            <h2>Popular Destinations</h2>
+
+            <p class="note">
+                Choose your favourite place and enjoy our promotion!
+            </p>
+
+            <article class="card">
+        <h3>Terengganu</h3>
+        <p>Terengganu is famous for beautiful beaches, islands and crystal-clear water.</p>
+        <p>Price: <span class="old-price">RM 299</span>
+        <strong>RM 199</strong></p>
+    </article>
+
+    <article class="card">
+        <h3>Kelantan</h3>
+        <p>Kelantan is famous for traditional food, local culture and handmade crafts.</p>
+        <p>Price: <span class="old-price">RM 250</span>
+        <strong>RM 180</strong></p>
+    </article>
+
+    <article class="card">
+        <h3>Pahang</h3>
+        <p>Pahang has beautiful nature, Cameron Highlands and interesting tourist attractions.</p>
+        <p>Price: <span class="old-price">RM 350</span>
+        <strong>RM 260</strong></p>
+    </article>
+        </section>
+
+        <!-- Video Section -->
+        <section id="video">
+            <h2>Travel Video</h2>
+
+            <figure>
+                <video width="600" height="350" controls>
+                    <source src="travel-video.mp4" type="video/mp4">
+                    Sorry, your browser does not support video.
+                </video>
+
+                <figcaption>
+                    Watch this video to see beautiful places in Malaysia.
+                </figcaption>
+            </figure>
+        </section>
+
+        <!-- Trip Section -->
+        <section id="trip">
+            <h2>Plan Your Trip</h2>
+
+            <p>Number of seats filled:
+                <meter min="0" max="40" value="28">
+                    28 out of 40
+                </meter>
+                28 / 40
+            </p>
+
+            <!-- Trip Form -->
+            <form class="trip-form" action="#" method="post">
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <p>Traveller Type:</p>
+
+                <input type="radio" id="student" name="traveller" value="Student" required>
+                <label for="student">Student</label>
+
+                <input type="radio" id="staff" name="traveller" value="Staff">
+                <label for="staff">Staff</label>
+
+                <input type="radio" id="public" name="traveller" value="Public">
+                <label for="public">Public</label>
+
+                <p>Interests:</p>
+
+                <input type="checkbox" id="islands" name="interests" value="Islands">
+                <label for="islands">Islands</label>
+
+                <input type="checkbox" id="food" name="interests" value="Food">
+                <label for="food">Food</label>
+
+                <input type="checkbox" id="culture" name="interests" value="Culture">
+                <label for="culture">Culture</label>
+
+                <input type="checkbox" id="nature" name="interests" value="Nature">
+                <label for="nature">Nature</label>
+
+                <br><br>
+
+                <button type="submit">Submit</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Explore Malaysia</p>
+
+        <address>
+            Email:
+            <a href="mailto:travel@gmail.com">travel@gmail.com</a>
+        </address>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Café Campus</title>
+
+    <style>
+
+        /* Navigation bar */
+        ul {
+            list-style-type: none; /* FIX 1: Change 'no' to 'none' to remove bullet points */
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        /* Link colours */
+        a:link {
+            color: #1A5276;
+        }
+
+        a:visited {
+            color: #7D3C98;
+        }
+
+        a:hover {
+            color: #E67E22;
+        }
+
+        a:active {
+            color: #C0392B;
+        }
+
+        h1 { /* FIX 2: Change '1h1' to 'h1' */
+            text-decoration: overline; /* FIX 3: Change 'overlined' to 'overline' */
+            text-align: center;
+            color: #9A5B00;
+        }
+
+        p {
+            color: #333333; /* FIX 4: Add missing colon after 'color' */
+            text-align: justify;
+        }
+
+        .intro { /* FIX 5: Change '#intro' to '.intro' because HTML uses class */
+            font-size: 18px;
+            background-color: #FDEBD0;
+            padding: 10px;
+        } /* FIX 6: Add missing closing curly bracket */
+
+        .highlight { /* FIX 7: Add dot before 'highlight' to select a class */
+            font-weight: bold;
+            color: #C0392B;
+        }
+
+        body {
+            background-color: #FFF8DC;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        nav {
+            background-color: #F9E79F;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .item {
+            background-color: #FCF3CF;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        footer {
+            background-color: #F9E79F;
+            padding: 10px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- FIX 8: Change href="menu" to href="#menu" so the link jumps to the menu section -->
+
+    <header>
+        <h1>e-Café Campus</h1>
+        <p style="text-align:center;">
+            Welcome to e-Café Campus!
+        </p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li> <!-- FIX 8: Add # to link to menu ID -->
+            <li><a href="#video">Video</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="menu">
+
+        <h2>Today's Menu</h2>
+
+        <p class="intro">
+            Freshly brewed coffee and local delights every day.
+        </p>
+
+        <article class="item"> <!-- FIX 9: Change id="item" to class="item" to avoid duplicate IDs -->
+            <h3>Kopi Tarik</h3>
+            <p>Only <span class="highlight">RM 3.50</span></p>
+        </article>
+
+        <article class="item"> <!-- FIX 9: Change id="item" to class="item" to avoid duplicate IDs -->
+            <h3>Nasi Lemak</h3>
+            <p>Only <span class="highlight">RM 5.00</span></p>
+        </article>
+
+        <!-- Additional menu item -->
+        <article class="item">
+            <h3>Teh Ais</h3>
+            <p>Only <span class="highlight">RM 2.50</span></p>
+        </article>
+
+    </section>
+
+    <section id="video">
+
+        <h2>Watch Our Story</h2>
+
+        <video width="400" height="300" controls> <!-- FIX 10: Add controls to play and pause the video -->
+            <source src="cafe.mp4" type="video/mp4"> <!-- FIX 11: Change type="mp4" to type="video/mp4" -->
+            Your browser does not support the video tag.
+        </video>
+
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>
+            e-Café Campus provides delicious food and drinks
+            for students and staff. Visit us and enjoy our
+            affordable menu!
+        </p>
+
+        <h3>Opening Hours</h3>
+        <p>Monday - Friday: 8.00 AM - 5.00 PM</p>
+        <p>Saturday - Sunday: Closed</p>
+    </section>
+
+    <footer id="contact">
+        <h3>Contact Us</h3>
+        <p>Email: ecafe@campus.com</p>
+        <p>&copy; 2026 e-Café Campus</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <!-- Set viewport for responsive website -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Adib Cafe Campus</title>
+
+    <!-- Link external CSS file -->
+    <link rel="stylesheet" href="cafe.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Adib cafe Campus</h1>
+        <p class="welcome">Welcome to Adib Cafe Campus!</p>
+    </header>
+
+    <!-- Navigation bar section -->
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Menu section with old and new prices -->
+    <section id="menu">
+
+        <h2>Today's Menu</h2>
+
+        <p class="intro">
+            Freshly brewed and local delights every day.
+        </p>
+
+        <article class="item">
+            <h3>Teh Tarik</h3>
+            <p>
+                Old Price:
+                <span class="old-price">RM 3.50</span>
+                New Price:
+                <span class="highlight">RM 1.50</span>
+            </p>
+        </article>
+
+        <article class="item">
+            <h3>Nasi Lemak</h3>
+            <p>
+                Old Price:
+                <span class="old-price">RM 5.50</span>
+                New Price:
+                <span class="highlight">RM 4.00</span>
+            </p>
+        </article>
+
+        <article class="item">
+            <h3>Green Tea Ais</h3>
+            <p>
+                Old Price:
+                <span class="old-price">RM 5.50</span>
+                New Price:
+                <span class="highlight">RM 2.50</span>
+            </p>
+        </article>
+
+    </section>
+
+    <!-- Video section with figure and caption -->
+    <section id="video">
+
+        <h2>Watch Our Story</h2>
+
+        <figure>
+            <video controls>
+                <source src="cafe.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <figcaption>
+                Welcome to Adib Café Campus. Enjoy our delicious food and drinks!
+            </figcaption>
+        </figure>
+
+    </section>
+
+    <!-- Feedback form section -->
+    <section id="feedback">
+
+        <h2>Customer Feedback</h2>
+
+        <form class="feedback-form">
+
+            <!-- Name input -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <!-- Email input -->
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Visit type radio buttons -->
+            <p>Visit Type:</p>
+
+            <input type="radio" id="dinein" name="visit" value="Dine-in">
+            <label for="dinein">Dine-in</label>
+
+            <input type="radio" id="takeaway" name="visit" value="Take-away">
+            <label for="takeaway">Take-away</label>
+
+            <!-- Favourite items checkboxes -->
+            <p>Favourite Items:</p>
+
+            <input type="checkbox" id="kopi" name="favourite" value="Kopi Tarik">
+            <label for="kopi">Kopi Tarik</label>
+
+            <input type="checkbox" id="nasi" name="favourite" value="Nasi Lemak">
+            <label for="nasi">Nasi Lemak</label>
+
+            <input type="checkbox" id="teh" name="favourite" value="Teh Ais">
+            <label for="teh">Teh Ais</label>
+
+            <!-- Submit button -->
+            <br><br>
+            <button type="submit">Submit Feedback</button>
+
+        </form>
+
+    </section>
+
+    <!-- About us section -->
+    <section id="about">
+
+        <h2>About Us</h2>
+
+        <p>
+            Adib Cafe Campus provides delicious food and drinks
+            for students and staff. Visit us and enjoy our
+            affordable menu!
+        </p>
+
+        <h3>Opening Hours</h3>
+        <p>Monday - Friday: 8.00 AM - 5.00 PM</p>
+        <p>Saturday & Sunday: Closed</p>
+
+    </section>
+
+    <!-- Footer section with email address -->
+    <footer id="contact">
+
+        <h3>Contact Us</h3>
+
+        <address>
+            E-mail:
+            <a href="mailto:adibcafe@campus.com>
+                adibcafe@campus.com
+            </a>
+        </address>
+
+        <p>&copy; 2026 adib cafe Campus</p>
+
+    </footer>
+
+</body>
+</html>
