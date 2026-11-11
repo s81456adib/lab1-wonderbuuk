@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lab 4 HTML5 and CSS webpage demonstrating semantic elements, media, navigation, and a form.">
+    <meta name="author" content="Student">
+    <title>Lab 4 | My Personal Profile</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS (required for this lab) -->
+    <style>
+        .highlight {
+            color: #0f766e;
+            text-decoration: overline;
+        }
+        #welcome {
+            scroll-margin-top: 90px;
+        }
+    </style>
+</head>
+<body>
+    <header id="welcome">
+        <div class="header-content">
+            <p class="eyebrow">HTML5 &amp; CSS LAB</p>
+            <h1>My Personal Profile</h1>
+            <p class="subtitle">Welcome to my little corner of the web.</p>
+        </div>
+    </header>
+
+    <nav class="navbar" aria-label="Main navigation">
+        <ul>
+            <li><a href="#welcome">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#media">My Video</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#contact">Contact Form</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section id="about" class="content-section">
+            <article class="card">
+                <h2>About <span class="highlight">Me</span></h2>
+                <p>Hello! My name is <strong>Student</strong>. I am interested in technology,
+                   creativity, and learning new skills. This webpage is created as a demonstration
+                   of semantic HTML5 elements and CSS styling.</p>
+                <p class="text-example">This sentence demonstrates <span class="underline">underline</span>,
+                   <span class="overline">overline</span>, and <span class="line-through">line-through</span>
+                   text decoration.</p>
+            </article>
+        </section>
+
+        <section id="media" class="content-section">
+            <article class="card">
+                <h2>Featured Video</h2>
+                <p>Watch this short sample video:</p>
+                <figure class="video-wrapper">
+                    <video controls preload="metadata">
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
+                    <figcaption>A sample video of Big Buck Bunny (HTML5 video demonstration).</figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <section id="hobbies" class="content-section">
+            <article class="card">
+                <h2>My Favorite Hobbies</h2>
+                <ul class="hobby-list">
+                    <li>Listening to music</li>
+                    <li>Web design and coding</li>
+                    <li>Photography and video editing</li>
+                    <li>Exploring new technology</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="contact" class="content-section">
+            <article class="card">
+                <h2>Get to Know You</h2>
+                <p>Fill in this form to share a little about yourself.</p>
+
+                <form class="profile-form" action="#" method="get">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="name@example.com" required>
+                    </div>
+
+            <fieldset class="form-group">
+                <legend>Gender:</legend>
+                <div class="choice">
+                    <label><input type="radio" name="gender" value="male" required> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                    <label><input type="radio" name="gender" value="prefer-not-to-say"> Prefer not to say</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-group">
+                <legend>Favorite Hobbies:</legend>
+                <div class="choice">
+                    <label><input type="checkbox" name="hobbies" value="music"> Music</label>
+                    <label><input type="checkbox" name="hobbies" value="sports"> Sports</label>
+                    <label><input type="checkbox" name="hobbies" value="reading"> Reading</label>
+                    <label><input type="checkbox" name="hobbies" value="coding"> Coding</label>
+                </div>
+            </fieldset>
+
+            <button type="submit">Submit Form</button>
+            </form>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Personal Profile | Lab 4 HTML &amp; CSS</p>
+        <p><a href="mailto:student@example.com">Email Me</a></p>
+    </footer>
+</body>
+</html>
